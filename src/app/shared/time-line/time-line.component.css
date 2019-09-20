@@ -1,0 +1,156 @@
+#time-line-chart .metric-chart text {
+	fill: #565656;
+	font-size: 9px;
+	font-family: Helvetica, Arial, "sans serif";
+}
+
+#time-line-chart .metric-chart text.no-data {
+	font-size: 16px;
+	font-weight: 100;
+	fill:#d0d0d0;
+}
+
+#time-line-chart .metric-chart rect.no-data {
+	fill: #f5f5f5;
+}
+
+/* When there is data ...*/
+
+/* CB: padding to display better on bl.ocks.org */
+#time-line-chart {
+	padding: 64px;
+}
+
+#time-line-chart .metric-chart rect.plot-background{
+	fill: white;
+}
+
+/* complete data line */
+#time-line-chart .metric-chart path.line {
+	fill: none;
+	stroke: #00AA8D; /* default, changed in each theme */
+	stroke-width: 1.5px;
+	clip-path: url(#clip);
+}
+
+/* complete data area */
+#time-line-chart .metric-chart path.area {
+	fill: #00AA8D; /* CB default, changed in each theme */
+	opacity: 0.6;
+	clip-path: url(#clip);
+	cursor: move; /* fallback if grab cursor is unsupported */
+	cursor: grab;
+}
+
+/*missing data line */
+#time-line-chart .metric-chart path.line_missing {
+	fill: none;
+	stroke: #00AA8D; /* default, changed in each theme */
+	stroke-width: 1.5px;
+	stroke-dasharray: 1.5px 2px;
+	clip-path: url(#clip);
+}
+/*missing data area */
+#time-line-chart .metric-chart path.area_missing {
+	fill: #00AA8D; /* CB default, changed in each theme */
+	opacity: 0.15;
+	clip-path: url(#clip);
+	cursor: move; /* fallback if grab cursor is unsupported */
+	cursor: grab;
+}
+
+#time-line-chart .metric-chart path.area_missing:active,
+#time-line-chart .metric-chart path.area:active {
+	cursor: move; /* fallback if grab cursor is unsupported */
+	cursor: grabbing;
+}
+
+#time-line-chart .metric-chart .axis {
+	shape-rendering: crispEdges;
+}
+
+#time-line-chart .metric-chart .x.axis .domain{
+	display:none;
+}
+
+#time-line-chart .metric-chart .x.axis line {
+	stroke: white;
+	opacity: 0.4;
+}
+
+#time-line-chart .metric-chart .context .x.axis line {
+	display: none;
+}
+
+#time-line-chart .metric-chart .y.axis .domain{
+	display: none;
+}
+
+#time-line-chart .metric-chart .y.axis.title{
+	font-size: 13px;
+	font-weight: 100;
+}
+
+#time-line-chart .metric-chart .y.axis line {
+	stroke: #565656;
+	stroke-dasharray: 2,2;
+	stroke-opacity: 0.3;
+}
+
+#time-line-chart .metric-chart .brush .extent {
+  fill-opacity: .07;
+  shape-rendering: crispEdges;
+  clip-path: url(#clip);
+}
+
+#time-line-chart .metric-chart rect.pane {
+	cursor: move; /* fallback if grab cursor is unsupported */
+	cursor: grab;
+	fill: white;
+	pointer-events: all;
+}
+
+#time-line-chart .metric-chart rect.pane:active {
+	cursor: move; /* fallback if grab cursor is unsupported */
+	cursor: grabbing;
+}
+
+/* brush handles  */
+#time-line-chart .metric-chart .resize .handle {
+	fill: #555;
+}
+
+#time-line-chart .metric-chart .resize .handle-mini {
+	fill: white;
+    stroke-width: 1px;
+    stroke: #555;
+}
+
+#time-line-chart .metric-chart .scale_button {
+	cursor: pointer;
+}
+
+#time-line-chart .metric-chart .scale_button rect {
+	fill: #eaeaea;
+}
+#time-line-chart .metric-chart .scale_button:hover text {
+	fill: #417DD6;
+	transition: all 0.1s cubic-bezier(.25,.8,.25,1);
+}
+
+#time-line-chart .metric-chart text#displayDates  {
+	font-weight: bold;
+}
+
+
+.time-line-chart {	  width: 100%;	  height: 300px;	}	
+.time-line-chart .axis path,	.time-line-chart .axis line {	 
+    fill: none;
+    stroke: blue;
+    }	 
+.time-line-chart .axis text {	  fill: #999;	} 
+
+.line{
+    fill: none;
+    stroke: blue;
+} 

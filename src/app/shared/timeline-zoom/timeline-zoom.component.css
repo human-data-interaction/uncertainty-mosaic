@@ -1,0 +1,72 @@
+.preview{
+  position:absolute;
+   top:0;
+   right:0;
+   width: 250px;
+   margin-right: 10px;
+   margin-top: 110px;
+}
+/* .tick line{ 
+  stroke: black
+} */
+
+.previewImage{
+  height: 250px;
+  width: 250px;
+  border: none
+}
+.previewTitle{
+  word-wrap: break-word;
+}
+
+.line{
+  clip-path: url(#clip);
+}
+.line2{
+  fill: none;
+	stroke: #00AA8D; /* default, changed in each theme */
+	stroke-width: 1.5px;
+	stroke-dasharray: 1.5px 2px;
+	clip-path: url(#clip);
+}
+
+.zoom {
+    cursor: move;
+    fill: none;
+    pointer-events: all;
+    fill: transparent
+} */
+
+ body {
+	font-family: futura;
+	font-size: 12px;
+}
+
+.area {
+  fill: rgb(208, 214, 213);
+  clip-path: url(#clip);
+}
+
+.area2 {
+  fill: #00AA8D;
+  clip-path: url(#clip);
+}
+
+.zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
+.axis text {
+  font-family: futura;
+  font-size: 0.8em;
+}
+
+.axis path {
+  stroke: black;
+}
+
+#timelinezoom {
+  width: 100%;
+  height: 390px;
+}

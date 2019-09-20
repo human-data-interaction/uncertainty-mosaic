@@ -1,0 +1,11 @@
+.time-line-chart {	  width: 100%;	  height: 300px;	}	
+.time-line-chart .axis path,	.time-line-chart .axis line {	 
+    fill: none;
+    stroke: blue;
+    }	 
+.time-line-chart .axis text {	  fill: #999;	} 
+
+.line{
+    fill: none;
+    stroke: blue;
+}
