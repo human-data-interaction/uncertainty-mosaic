@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
-import d3 = require('d3');
+import * as d3 from "d3";
 import {SP500_MISSING} from '../datamanager';
 
 @Component({

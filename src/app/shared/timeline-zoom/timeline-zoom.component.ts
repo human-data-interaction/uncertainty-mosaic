@@ -1,11 +1,14 @@
 import { Component, OnInit, Input, ViewChild, ElementRef, ViewEncapsulation } from '@angular/core';
 import { SP500_MISSING, Artist } from '../datamanager';
 import { DataManager, METDATA } from '../datamg';
-import d3 = require('d3');
-import dat = require('dat.gui');
+import * as d3 from "d3";
+// import dat = require('dat.gui');
+import * as dat from "dat.gui";
 import * as moment from 'moment';
 import { GUI } from 'dat-gui';
-import jz = require('jeezy');
+// import jz = require('jeezy');
+import * as jz from "jeezy";
+
 
 export interface Margin {
   top: number;

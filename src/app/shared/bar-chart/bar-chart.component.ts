@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
-import d3 = require('d3');
+// import d3 = require('d3');
+import * as d3 from "d3";
 
 @Component({
   selector: 'app-bar-chart',
